@@ -1,0 +1,189 @@
+
+user table creation
+--------------------------
+
+create table user
+(name varchar2(20) not null,
+address varchar2(30),
+email varchar2(15) not null,
+username varchar2(20) primary key,
+password varchar2(20) not null);
+
+
+admin table creation
+--------------------------
+
+create table admin
+(username varchar2(10) primary key,
+password varchar2(10) not null);
+
+
+Details table Creation
+-------------------------
+
+create table Details
+(itemcategory varchar2(15),
+itemname varchar2(20),
+price number(10),
+itemid varchar2(10) primary key);
+
+
+products table Creation
+------------------------------
+
+create table products
+(username varchar2(20),
+itemid varchar2(20),
+itemcategory varchar2(20),
+itemname varchar2(20),
+price number(20),
+purchase_date varchar2(20));
+
+
+
+Value Insertion in Details
+---------------------------------
+1. Dog Insertion
+------------------
+
+insert into Details values('Dog','American Bulldog',15000,'d1');
+
+
+insert into Details values('Dog','Afghan Hound' ,20000,'d2');
+
+
+insert into Details values('Dog','Border Collie',10000,'d3');
+
+
+insert into Details values('Dog','Boxer' ,15000,'d4');
+
+insert into Details values('Dog','Dalmatian',9000,'d5');
+
+
+insert into Details values('Dog','Labrador',20000,'d6');
+
+
+2. Cat Insertion
+---------------------
+
+insert into Details values('Cat','Asian Semi-Longhair',2000,'c1');
+
+
+insert into Details values('Cat','British Longhair',5000,'c2');
+
+
+insert into Details values('Cat','Cyprus',3000,'c3');
+
+
+insert into Details values('Cat','Munchkin',8000,'c4');
+
+
+insert into Details values('Cat','Ragamuffin',6000,'c5');
+
+
+3. Bird Insertion
+----------------------
+
+insert into Details values('Bird','Bluefronted Amazon',1500,'b2');
+
+
+insert into Details values('Bird','Great-Billed parrot',800,'b3');
+
+
+insert into Details values('Bird','Masked Lovebird',3000,'b4');
+
+
+insert into Details values('Bird','AmericanSinger Canary',4000,'b5');
+
+
+
+4. Fish Insertion
+--------------------
+
+
+insert into Details values('Fish','regaltang',500,'f1');
+
+
+insert into Details values('Fish','flameangel',1000,'f2');
+
+
+insert into Details values('Fish','goldfish',800,'f3');
+
+
+5.  Accesories Details
+-----------------------------
+
+
+insert into Details values('accesories','clothes',450,'ac1');
+
+
+insert into Details values('accesories','bed',550,'ac2');
+
+
+insert into Details values('accesories','muzzles',1050,'ac3');
+
+insert into Details values('accesories','coat',1060,'ac4');
+
+
+6.  Dogfood Details
+---------------------
+
+
+insert into Details values('dogfood','pedigree',500,'df1');
+
+
+insert into Details values('dogfood','biscuit',50,'df2');
+
+7.  Catfood details
+----------------------
+
+insert into Details values('catfood','friski',500,'df1');
+
+
+insert into Details values('catfood','whiskas',500,'df1');
+
+
+8.Fishfood Details
+---------------------
+
+
+insert into Details values('fishfood','cichlid',500,'x1');
+
+9.Birdfood Details
+---------------------
+insert into Details values('birdfood','prestige',50,'x2');
+
+10.  Groom details
+--------------------
+insert into Details values('groom','leash',500,'g1');
+
+
+insert into Details values('groom','shampoo',500,'g2');
+
+
+insert into Details values('groom','glove',500,'g3');
+
+insert into Details values('groom','aroma',500,'g4');
+
+
+11.  Health Details
+------------------------
+insert into Details values('health','supplement',500,'h1');
+
+
+12.  Training Details
+------------------------
+
+insert into Details values('training','pad',500,'t1');
+
+insert into Details values('training','aid',700,'t21');
+
+
+
+
+
+
+
+
+
+

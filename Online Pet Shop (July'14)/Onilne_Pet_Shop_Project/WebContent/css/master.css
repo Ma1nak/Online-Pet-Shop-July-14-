@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background: url(../images/bg-body.gif) repeat-x;}
+.loginSec {margin-top: 50px;}
+.logHd {display:block;}
+.logBod{border: 1px #555 solid; background :#EEE; border-radius: 5px; margin-top: 10px;}
+.pad20 {padding: 20px;}
+.submit {display: inline-block; margin-top: 20px;}
+h4 {line-height: 32px; height: 40px;}
+.regSubmit {display: block; width: 200px; margin: 0 auto;}

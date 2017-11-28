@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/master.css" />
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<title>Login</title>
+</head>
+
+<body>
+<div id="header">
+	           		<a href="Index.jsp" id="logo"><img src="images/logo.gif" width="310" height="114" alt="" title=""></a>
+					<ul class="navigation">
+						<li><a href="Index.jsp">Home</a></li>
+						<li><a href="Petmart.jsp">PetMart</a></li>
+						<li><a href="About.jsp">About us</a></li>
+						<li><a href="Petguide.jsp">PetGuide</a></li>
+						<li><a href="Contact.jsp">Contact us</a></li>
+					</ul>
+			</div>
+			</div>
+<div id="body">
+<div class="content">
+<div class="header">
+	<div class="container">
+    	<div class="row">
+        	<a href="javascript:;">
+            </a>
+        </div>
+        <div class="row loginSec">
+        	<div class="col-xs-12 col-sm-4 col-sm-push-2">
+            	<a href="javascript:;" class="btn btn-warning btn-lg logHd userBtn">User Login</a>
+                <div class="logBod userBod">
+                	<div class="pad20">
+                    	<form action="lg">
+	                    	<h2>Username</h2>'
+                            <input type="text" placeholder="username" class="form-control" name="t1" id="t1"/>
+	                    	<h2>Password</h2>
+                            <input type="password" placeholder="password" class="form-control" name="t2" id="t2"/>
+                            <input type="submit" class="btn btn-primary submit" value="Login"/>    
+                            <br><br> <tr><td align="right"><a rel="nofollow" href="signup.html">Create a new account ?</a></td></tr>                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        	<div class="col-xs-12 col-sm-4 col-sm-push-2">
+            	<a href="javascript:;" class="btn btn-warning btn-lg logHd adminBtn">Admin Login</a>
+                <div class="logBod adminBod">
+                	<div class="pad20">
+                    	<form action="admin_validation.jsp">
+	                    	<h2>Username</h2>
+                            <input type="text" placeholder="username" class="form-control" name="t1"/>
+	                    	<h2>Password</h2>
+                            <input type="password" placeholder="password" class="form-control" name="t2"/>
+                            <input type="submit" class="btn btn-primary submit" value="Login"/>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+				  
+					
+			   <div class="featured">
+				    <marquee>    <ul>
+							<li><img src="images/organic-and-chemical-free.jpg" width="300" height="90" alt="Pet Shop" title="Pet Shop" ></li>
+							<li><img src="images/good-food.jpg" width="300" height="90" alt="Pet Shop" title="Pet Shop" ></li>
+							<li class="last"><img src="images/pet-grooming.jpg" width="300" height="90" alt="Pet Shop" title="Pet Shop" ></li>
+						</ul></marquee>
+				        
+				   </div>
+				  
+			
+			</div>
+			
+			<div id="footer">
+			        <div class="section">
+						<ul>
+							<li>
+								<img src="images/friendly-pets.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+								<h2><font color=GREENYELLOW>Friendly Pets</font></h2>
+								<p><br>
+								 Keep Your Pets Safe this Summer. Summer can be a special time to bond with our pets .
+								</p>
+							</li>	
+							<li>
+								<img src="images/pet-lover2.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+								<h2><font color=GREENYELLOW>How dangerous are they</font></h2>
+								<p><br>
+								  Keeping wild and exotic animals as pets threatens public health and safety .
+								</p>
+							</li>	
+							<li>
+								<img src="images/healthy-dog.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+								<h2><font color=GREENYELLOW>Keep them healthy</font></h2>
+								<p><br><br>
+								  Simple Steps Ensure a Long Life for Your Pet. 
+								</p>
+							</li>	
+							<li>
+								
+								<h2><font color=GREENYELLOW>Love...love...love...pets</font></h2>
+								<p><br>
+								    Love Your Pet is completely committed to the health and well being of your pet .
+								</p>
+								<img src="images/pet-lover.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+							</li>	
+						</ul>
+					</div>
+					<div id="footnote">
+						<div class="section">
+						 &copy; 2014 <a href="Index.jsp">Petshop</a>. All Rights Reserved.
+						</div>
+					</div>
+			</div>
+			
+			</div>
+<script type="text/javascript">
+	$(function(){
+		$(".userBod").hide();
+		$(".adminBod").hide();
+		$(".userBtn").click(function(){
+			$(".userBod").slideDown();
+			$(".adminBod").slideUp();
+		});
+		$(".adminBtn").click(function(){
+			$(".userBod").slideUp();
+			$(".adminBod").slideDown();
+		});
+	});
+</script>
+
+</body>
+</html>
